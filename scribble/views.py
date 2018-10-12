@@ -46,7 +46,7 @@ def comment_detail(request, id):
 
 def comment_create(request):
     if request.method == 'POST':
-        form = CommentForm(request.POST)
+        form = CommentForm(request.Post)
         if form.is_valid():
             comment = form.save()
             return redirect('/')
