@@ -64,7 +64,7 @@ def comment_edit(request, id):
     else:
         form = PostForm(instance=comment)
     return render(request, 'scribble/comment_form.html', { 'form': form })
-
+     
 def comment_delete(request, id):
-    Comment.objects.get(id=id).delete()
+    Comment.objects.get(pk=id)
     return redirect('comment_list')
