@@ -10,7 +10,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     author = models.CharField(max_length=100)
-    body = models.CharField(max_length=100)
+    body = models.CharField(max_length=250)
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
 
