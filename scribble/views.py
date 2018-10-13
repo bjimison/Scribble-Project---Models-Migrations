@@ -8,8 +8,8 @@ def post_list(request):
     return render(request, 'scribble/post_list.html', { 'posts': posts })
 
 def post_detail(request, pk):
-    post = Post.objects.get(id=pk)
-    return render(request, 'scribble/post_detail.html', { 'post': post })
+    post = Post.objects.get(pk=id)
+    return render(request, 'scribble/post_detail.html', {'post': post})
 
 def post_create(request):
     if request.method == 'POST':
