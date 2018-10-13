@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-style: italic;
+}
+
+nav {
+  align-self: center;
+}
